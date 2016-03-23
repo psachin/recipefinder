@@ -1,7 +1,7 @@
 <h1>RecipeFinder</h1>
 <p>Powered By Food2Fork.com</p>
 
-<% if @recipes.nil? %>
+<% if @recipes.nil? or @recipes.count.zero? %>
 
 <p>Sorry, <i>RecipeFinder</i> can't find recipe for <%= @search_term %> </p>
 
